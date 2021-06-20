@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.grumpyshoe.modules.pushmanager.sample">
+    package="com.greedyisgood.modules.pushmanager.sample">
 
     <application
         android:allowBackup="true"
@@ -14,13 +14,13 @@
 
 
         <service
-            android:name=".MyService">
+            android:name="com.greedyisgood.modules.pushmanager.sample.MyService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT"/>
             </intent-filter>
         </service>
 
-        <activity android:name=".MainActivity"
+        <activity android:name="com.greedyisgood.modules.pushmanager.sample.MainActivity"
             android:launchMode="singleTop">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -29,7 +29,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".NotificationActivity" />
+        <activity android:name="com.greedyisgood.modules.pushmanager.sample.NotificationActivity" />
     </application>
 
 </manifest>
